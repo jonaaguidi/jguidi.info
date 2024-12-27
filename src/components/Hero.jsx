@@ -4,6 +4,8 @@ import BadgeShine from "./ui/badge";
 import MarqueeTech from "@/components/Marquee";
 import { VscCallOutgoing } from "react-icons/vsc";
 import Link from "next/link";
+import { MdAutoAwesome } from "react-icons/md";
+
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 h-full w-full bg-[linear-gradient(to_right,#b1b1b12e_1px,transparent_1px),linear-gradient(to_bottom,#b1b1b12e_1px,transparent_1px)] bg-[size:56px_24px] opacity-30 max-h-[90vh]"></div>
       <div className="w-[320px] sm:w-[420px] h-[80px] bg-[#0A83E8] bg-opacity-70 blur-[80px] relative rounded-full bottom-8 z-10"></div>
       {/* Contenido */}
-      <BadgeShine text={"IT Solutions & Product Management"} />
+      <BadgeShine Icon={MdAutoAwesome} text={"IT Solutions & Product Management"} />
       <h1 className="text-white text-4xl sm:text-6xl tracking-tight font-semibold max-w-[700px] sm:max-w-[800px] text-center leading-[125%] sm:leading-[115%] z-50 bg-transparent">
         Potencia tu Equipo con{" "}
         <span className="animate-text-gradient bg-gradient-to-r from-[#a8d2f5] via-[#0A83E8] to-[#a8d2f5] bg-[200%_auto] bg-clip-text text-transparent">

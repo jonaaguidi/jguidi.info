@@ -3,6 +3,12 @@ import React, { useRef, useState } from "react";
 import BadgeShine from "./badge";
 import Image from "next/image";
 import jona from "../../../public/jona.jpg";
+import { TbDeviceMobileShare } from "react-icons/tb";
+import { MdOutlineWeb } from "react-icons/md";
+import { FaRegChartBar } from "react-icons/fa";
+
+
+
 
 const CardProfile = () => {
   const divRef = useRef(null);
@@ -91,9 +97,9 @@ const CardProfile = () => {
           desde programación en código hasta plataformas Low Code y No Code.
         </p>
         <div className="flex flex-wrap gap-4 bg-transparent pt-4 max-w-full sm:max-w-[640px]">
-          <BadgeShine text="Diseño UX/UI & Product Design" />
-          <BadgeShine text="Desarrollo Web FullStack" />
-          <BadgeShine text="Growth & Product Marketing" />
+          <BadgeShine Icon={TbDeviceMobileShare} text="Diseño UX/UI & Product Design" />
+          <BadgeShine Icon={MdOutlineWeb} iconClassName="text-lg mr-2 bg-transparent text-[#0A83E8]" text="Desarrollo Web FullStack" />
+          <BadgeShine Icon={FaRegChartBar} text="Growth & Product Marketing" />
           <BadgeShine text="IA & Automatización de Procesos" />
         </div>
       </div>
